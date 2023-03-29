@@ -17,9 +17,16 @@ public class PlayerMove : MonoBehaviour
 
     bool isJump;
     bool isRun;
+
+    float interval = 0.25f;
+    float doubleClickedTime = -1.0f;
+    bool isDoubleClicked = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
+
         rb = GetComponent<Rigidbody>();
         isJump = false;
 
@@ -32,6 +39,7 @@ public class PlayerMove : MonoBehaviour
         //이동 구현
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
+        KeyBoard();
         Move();
 
         //점프 구현
@@ -46,15 +54,40 @@ public class PlayerMove : MonoBehaviour
 
     }
 
+    void KeyBoard()
+    {
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        {
+            if ((Time.time - doubleClickedTime) < interval)
+            {
+                isDoubleClicked = true;
+                doubleClickedTime = -1.0f;
+            }
+            else
+            {
+                isDoubleClicked = false;
+                doubleClickedTime = Time.time;
+            }
+        }
+    }
+
     void Move()
     {
         moveVector = new Vector3(hAxis, 0, vAxis).normalized; // 벡터 정규화 꼭 해주어야함. 안그러면 대각선 이동 이상해짐
-        transform.position += moveVector * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
         //벨로시티는 속도를 더해주는 방식이여서인지 제대로 이동이 안됨.
         //rb.velocity = moveVector;
+        if (isDoubleClicked)
+        {
+            anim.SetTrigger("doDodge");
+            transform.position += moveVector * 2 * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
+            StartCoroutine(doubleStop());
+        } else
+        {
+            anim.SetBool("isWalk", moveVector != Vector3.zero);
+            anim.SetBool("isRun", isRun);
 
-        anim.SetBool("isWalk", moveVector != Vector3.zero);
-        anim.SetBool("isRun", isRun);
+            transform.position += moveVector * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
+        }
 
         transform.LookAt(transform.position + moveVector); //방향 회전
     }
@@ -75,4 +108,14 @@ public class PlayerMove : MonoBehaviour
             anim.SetBool("isLand", true);
         }
     }
+
+    IEnumerator doubleStop()
+    {
+        yield return new WaitForSeconds(0.25f);
+
+        isDoubleClicked = false;
+
+    }
+
+    
 }
