@@ -51,7 +51,6 @@ public class PlayerMove : MonoBehaviour
         isRun = Input.GetKey(KeyCode.LeftShift) && moveVector != Vector3.zero;
 
 
-
     }
 
     void KeyBoard()
