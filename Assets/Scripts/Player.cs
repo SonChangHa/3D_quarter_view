@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
     public int maxHp;
     public int maxBomb;
 
+    public Transform bulletPos;
+    public GameObject bullet;
+    public Transform bulletCasePos;
+    public GameObject bulletCase;
+
 
     bool weaponNum1;
     bool weaponNum2;
@@ -31,6 +36,7 @@ public class Player : MonoBehaviour
     Weapon equipWeapon;
 
     Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,6 +93,8 @@ public class Player : MonoBehaviour
         if(attackInput && isAttackReady)
         {
             equipWeapon.Use();
+            anim.SetTrigger(equipWeapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
+            attackDelay = 0;
         }
     }
 

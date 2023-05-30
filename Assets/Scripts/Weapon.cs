@@ -11,12 +11,21 @@ public class Weapon : MonoBehaviour
     public BoxCollider area;
     public TrailRenderer trail;
 
+    public Transform bulletPos;
+    public GameObject bullet;
+    public Transform bulletCasePos;
+    public GameObject bulletCase;
+
     public void Use()
     {
         if(type == Type.Melee)
         {
             StopCoroutine("Swing");
             StartCoroutine("Swing");
+        }
+        if (type == Type.Range)
+        {
+            StartCoroutine("Shot");
         }
     }
 
@@ -31,5 +40,20 @@ public class Weapon : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
         trail.enabled = false;
+    }
+
+    IEnumerator Shot()
+    {
+        GameObject instantBullet = Instantiate(bullet, bulletPos.position, bulletPos.rotation);
+        Rigidbody bulletRb = instantBullet.GetComponent<Rigidbody>();
+        bulletRb.velocity = bulletPos.forward * 50;
+
+        yield return null;
+
+        GameObject instantCase = Instantiate(bulletCase, bulletCasePos.position, bulletCasePos.rotation);
+        Rigidbody caseRb = instantCase.GetComponent<Rigidbody>();
+        Vector3 caseVector = bulletCasePos.forward * Random.Range(-3, -2) + Vector3.up * Random.Range(2, 3);
+        caseRb.AddForce(caseVector, ForceMode.Impulse);
+        caseRb.AddTorque(Vector3.up * 10, ForceMode.Impulse);
     }
 }
