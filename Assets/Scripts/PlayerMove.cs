@@ -13,6 +13,8 @@ public class PlayerMove : MonoBehaviour
     Rigidbody rb;
     Animator anim;
 
+    Camera mainCam;
+
     Vector3 moveVector;
 
     bool isJump;
@@ -31,6 +33,8 @@ public class PlayerMove : MonoBehaviour
         isJump = false;
 
         anim = GetComponentInChildren<Animator>();
+
+        mainCam = Camera.main;
     }
 
     // Update is called once per frame
@@ -50,7 +54,29 @@ public class PlayerMove : MonoBehaviour
         //쉬프트 클릭시 이속 2배
         isRun = Input.GetKey(KeyCode.LeftShift) && moveVector != Vector3.zero;
 
+        if (Input.GetMouseButton(0))
+        {
+            Turn();
+        }
+    }
 
+    private void FixedUpdate()
+    {
+        rb.angularVelocity = Vector3.zero;
+    }
+
+
+    void Turn()
+    {
+        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit rayHit;
+        if (Physics.Raycast(ray, out rayHit, 100))
+        {
+            Debug.DrawRay(transform.position, rayHit.point, Color.red);
+            Vector3 nextVector = rayHit.point - transform.position;
+            nextVector.y = 0;
+            transform.LookAt(transform.position + nextVector);
+        }
     }
 
     void KeyBoard()

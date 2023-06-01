@@ -11,10 +11,15 @@ public class Weapon : MonoBehaviour
     public BoxCollider area;
     public TrailRenderer trail;
 
+    public int curAmmo;
+    public int maxAmmo;
+
     public Transform bulletPos;
     public GameObject bullet;
     public Transform bulletCasePos;
     public GameObject bulletCase;
+
+
 
     public void Use()
     {
@@ -23,8 +28,9 @@ public class Weapon : MonoBehaviour
             StopCoroutine("Swing");
             StartCoroutine("Swing");
         }
-        if (type == Type.Range)
+        if (type == Type.Range && curAmmo > 0)
         {
+            curAmmo -= 1;
             StartCoroutine("Shot");
         }
     }

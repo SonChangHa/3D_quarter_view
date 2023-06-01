@@ -19,19 +19,18 @@ public class Player : MonoBehaviour
     public int maxHp;
     public int maxBomb;
 
-    public Transform bulletPos;
-    public GameObject bullet;
-    public Transform bulletCasePos;
-    public GameObject bulletCase;
-
 
     bool weaponNum1;
     bool weaponNum2;
     bool weaponNum3;
 
+    bool reloadInput;
+
     bool attackInput;
     float attackDelay;
     bool isAttackReady;
+
+    bool isReload;
 
     Weapon equipWeapon;
 
@@ -50,6 +49,7 @@ public class Player : MonoBehaviour
         GetInput();
         WeaponSwap();
         Attack();
+        Reload();
     }
 
     void WeaponSwap()
@@ -98,13 +98,39 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Reload()
+    {
+        if (equipWeapon == null || equipWeapon.type == Weapon.Type.Melee)
+            return;
+        if (ammo == 0)
+            return;
+
+        if (reloadInput)
+        {
+            anim.SetTrigger("doReload");
+            isReload = true;
+
+            Invoke("ReloadOut", 3f);
+        }
+    }
+
+    void ReloadOut()
+    {
+        isReload = false;
+        int reAmmo = equipWeapon.maxAmmo - equipWeapon.curAmmo;
+        equipWeapon.curAmmo += reAmmo;
+        ammo -= reAmmo;
+    }
+
     void GetInput()
     {
         weaponNum1 = Input.GetKeyDown(KeyCode.Alpha1);
         weaponNum2 = Input.GetKeyDown(KeyCode.Alpha2);
         weaponNum3 = Input.GetKeyDown(KeyCode.Alpha3);
 
-        attackInput = Input.GetMouseButtonDown(0);
+        attackInput = Input.GetMouseButton(0);
+
+        reloadInput = Input.GetKeyDown(KeyCode.R);
     }
 
     void GetItem()

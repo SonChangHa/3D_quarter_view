@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3890476}
   - component: {fileID: 3890475}
   - component: {fileID: 3890474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (29)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 30484314}
   - component: {fileID: 30484313}
   - component: {fileID: 30484312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (22)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 156761949}
   - component: {fileID: 156761948}
   - component: {fileID: 156761947}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (63)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8988915521048860388, guid: 4f2eaa8685c349145a89b9e34682adb1, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8988915521048860388, guid: 4f2eaa8685c349145a89b9e34682adb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 199870636}
   - component: {fileID: 199870635}
   - component: {fileID: 199870634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (13)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 220292100}
   - component: {fileID: 220292099}
   - component: {fileID: 220292098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (46)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 251653993}
   - component: {fileID: 251653992}
   - component: {fileID: 251653991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (55)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311401430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletCasePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 336361264}
   - component: {fileID: 336361263}
   - component: {fileID: 336361262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (8)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1049,6 +1049,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10653eccf6b69fd47938a227b4bf3863, type: 3}
+--- !u!1001 &497223172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8612294183505410117, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_Name
+      value: Item Ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.451601
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.286499
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993357788737495807, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dea1c6cbb60f0f45a15859dcac60272, type: 3}
 --- !u!1 &525017877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,7 +1118,7 @@ GameObject:
   - component: {fileID: 525017881}
   - component: {fileID: 525017880}
   - component: {fileID: 525017879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (10)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1159,6 +1216,10 @@ PrefabInstance:
       value: Weapon Hammer
       objectReference: {fileID: 0}
     - target: {fileID: 1348174882345252545, guid: c2ec4bfd1a6491c49a0c34b8dc3a7639, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348174882345252545, guid: c2ec4bfd1a6491c49a0c34b8dc3a7639, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1222,6 +1283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894848630618936430, guid: c2ec4bfd1a6491c49a0c34b8dc3a7639, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2ec4bfd1a6491c49a0c34b8dc3a7639, type: 3}
 --- !u!1 &549983912
@@ -1236,7 +1301,7 @@ GameObject:
   - component: {fileID: 549983916}
   - component: {fileID: 549983915}
   - component: {fileID: 549983914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (51)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1334,6 +1399,10 @@ PrefabInstance:
       value: Weapon SubMachineGun
       objectReference: {fileID: 0}
     - target: {fileID: 547435428816858648, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 547435428816858648, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1392,6 +1461,10 @@ PrefabInstance:
     - target: {fileID: 924136447322616994, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895473748344367657, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
@@ -1474,7 +1547,7 @@ GameObject:
   - component: {fileID: 640680405}
   - component: {fileID: 640680404}
   - component: {fileID: 640680403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (58)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1573,7 +1646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1629,7 +1702,7 @@ GameObject:
   - component: {fileID: 677857766}
   - component: {fileID: 677857765}
   - component: {fileID: 677857764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (54)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1732,7 +1805,7 @@ GameObject:
   - component: {fileID: 700914443}
   - component: {fileID: 700914442}
   - component: {fileID: 700914441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (41)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1910,7 +1983,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &725698809
 GameObject:
@@ -6736,7 +6809,7 @@ GameObject:
   - component: {fileID: 741737628}
   - component: {fileID: 741737627}
   - component: {fileID: 741737626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (62)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6834,7 +6907,7 @@ GameObject:
   - component: {fileID: 742147938}
   - component: {fileID: 742147937}
   - component: {fileID: 742147936}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (16)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6932,7 +7005,7 @@ GameObject:
   - component: {fileID: 745158824}
   - component: {fileID: 745158823}
   - component: {fileID: 745158822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (47)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7030,7 +7103,7 @@ GameObject:
   - component: {fileID: 763159218}
   - component: {fileID: 763159217}
   - component: {fileID: 763159216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (32)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7195,7 +7268,7 @@ GameObject:
   - component: {fileID: 771490692}
   - component: {fileID: 771490691}
   - component: {fileID: 771490690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7293,7 +7366,7 @@ GameObject:
   - component: {fileID: 786652734}
   - component: {fileID: 786652733}
   - component: {fileID: 786652732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (17)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7438,7 +7511,7 @@ GameObject:
   - component: {fileID: 816019920}
   - component: {fileID: 816019919}
   - component: {fileID: 816019918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (43)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7536,7 +7609,7 @@ GameObject:
   - component: {fileID: 822882764}
   - component: {fileID: 822882763}
   - component: {fileID: 822882762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (61)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7634,7 +7707,7 @@ GameObject:
   - component: {fileID: 851018382}
   - component: {fileID: 851018381}
   - component: {fileID: 851018380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7732,7 +7805,7 @@ GameObject:
   - component: {fileID: 854749966}
   - component: {fileID: 854749965}
   - component: {fileID: 854749964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (50)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7831,7 +7904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7915,6 +7988,8 @@ MonoBehaviour:
   rate: 0.4
   area: {fileID: 868099132}
   trail: {fileID: 870048306}
+  curAmmo: 0
+  maxAmmo: 0
   bulletPos: {fileID: 0}
   bullet: {fileID: 0}
   bulletCasePos: {fileID: 0}
@@ -7929,7 +8004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870048305}
   - component: {fileID: 870048306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8071,7 +8146,7 @@ GameObject:
   - component: {fileID: 907450733}
   - component: {fileID: 907450732}
   - component: {fileID: 907450731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (20)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8169,7 +8244,7 @@ GameObject:
   - component: {fileID: 908331712}
   - component: {fileID: 908331711}
   - component: {fileID: 908331710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (42)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8348,7 +8423,7 @@ Transform:
   - {fileID: 822882761}
   - {fileID: 741737625}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958712596
 GameObject:
@@ -8362,7 +8437,7 @@ GameObject:
   - component: {fileID: 958712600}
   - component: {fileID: 958712599}
   - component: {fileID: 958712598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (45)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8531,7 +8606,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -8559,7 +8634,7 @@ GameObject:
   - component: {fileID: 985579742}
   - component: {fileID: 985579741}
   - component: {fileID: 985579740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (59)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8657,7 +8732,7 @@ GameObject:
   - component: {fileID: 1018696739}
   - component: {fileID: 1018696738}
   - component: {fileID: 1018696737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (26)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8752,7 +8827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2665233229291915678, guid: e889126378b2b4d4db1017069738830c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2665233229291915678, guid: e889126378b2b4d4db1017069738830c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13624,7 +13699,7 @@ GameObject:
   - component: {fileID: 1043233058}
   - component: {fileID: 1043233057}
   - component: {fileID: 1043233056}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (33)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13722,7 +13797,7 @@ GameObject:
   - component: {fileID: 1046655730}
   - component: {fileID: 1046655729}
   - component: {fileID: 1046655728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13817,7 +13892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048403656}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13851,7 +13926,7 @@ GameObject:
   - component: {fileID: 1062163449}
   - component: {fileID: 1062163448}
   - component: {fileID: 1062163447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (14)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13949,7 +14024,7 @@ GameObject:
   - component: {fileID: 1091375054}
   - component: {fileID: 1091375053}
   - component: {fileID: 1091375052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (39)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14047,7 +14122,7 @@ GameObject:
   - component: {fileID: 1108041714}
   - component: {fileID: 1108041713}
   - component: {fileID: 1108041712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (56)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14145,7 +14220,7 @@ GameObject:
   - component: {fileID: 1108265578}
   - component: {fileID: 1108265577}
   - component: {fileID: 1108265576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (60)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19055,7 +19130,7 @@ GameObject:
   - component: {fileID: 1165698794}
   - component: {fileID: 1165698793}
   - component: {fileID: 1165698792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19153,7 +19228,7 @@ GameObject:
   - component: {fileID: 1168205888}
   - component: {fileID: 1168205887}
   - component: {fileID: 1168205886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (12)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19251,7 +19326,7 @@ GameObject:
   - component: {fileID: 1184862266}
   - component: {fileID: 1184862265}
   - component: {fileID: 1184862264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (31)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19349,7 +19424,7 @@ GameObject:
   - component: {fileID: 1189390968}
   - component: {fileID: 1189390967}
   - component: {fileID: 1189390966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (37)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19559,7 +19634,7 @@ GameObject:
   - component: {fileID: 1230085578}
   - component: {fileID: 1230085577}
   - component: {fileID: 1230085576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (53)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19652,9 +19727,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1596966620}
     m_Modifications:
+    - target: {fileID: 578974329431804512, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1509416925549156319, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
       propertyPath: m_Name
       value: Weapon HandGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509416925549156319, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1509416925549156319, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
       propertyPath: m_IsActive
@@ -19755,7 +19838,7 @@ GameObject:
   - component: {fileID: 1251522071}
   - component: {fileID: 1251522070}
   - component: {fileID: 1251522069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (28)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19853,7 +19936,7 @@ GameObject:
   - component: {fileID: 1291262664}
   - component: {fileID: 1291262663}
   - component: {fileID: 1291262662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (48)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20016,7 +20099,7 @@ GameObject:
   - component: {fileID: 1301293841}
   - component: {fileID: 1301293840}
   - component: {fileID: 1301293839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (30)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20114,7 +20197,7 @@ GameObject:
   - component: {fileID: 1304054623}
   - component: {fileID: 1304054622}
   - component: {fileID: 1304054621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (15)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20212,7 +20295,7 @@ GameObject:
   - component: {fileID: 1307690962}
   - component: {fileID: 1307690961}
   - component: {fileID: 1307690960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (44)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20310,7 +20393,7 @@ GameObject:
   - component: {fileID: 1333737958}
   - component: {fileID: 1333737957}
   - component: {fileID: 1333737956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20408,7 +20491,7 @@ GameObject:
   - component: {fileID: 1362972465}
   - component: {fileID: 1362972464}
   - component: {fileID: 1362972463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (52)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20521,6 +20604,8 @@ MonoBehaviour:
   rate: 0.15
   area: {fileID: 0}
   trail: {fileID: 0}
+  curAmmo: 30
+  maxAmmo: 30
   bulletPos: {fileID: 1048403656}
   bullet: {fileID: 2368233845014017327, guid: 60efa142230ec2c44ac5cdd834ff1a09, type: 3}
   bulletCasePos: {fileID: 1743337167}
@@ -20542,7 +20627,7 @@ GameObject:
   - component: {fileID: 1404004715}
   - component: {fileID: 1404004714}
   - component: {fileID: 1404004713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20641,7 +20726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822780364013162149, guid: add664329d7cc974499920fb3e70a7ab, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7822780364013162149, guid: add664329d7cc974499920fb3e70a7ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20697,7 +20782,7 @@ GameObject:
   - component: {fileID: 1466600641}
   - component: {fileID: 1466600640}
   - component: {fileID: 1466600639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (38)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20816,7 +20901,7 @@ Transform:
   - {fileID: 804609112}
   - {fileID: 1213746106}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1512178908
 GameObject:
@@ -20830,7 +20915,7 @@ GameObject:
   - component: {fileID: 1512178912}
   - component: {fileID: 1512178911}
   - component: {fileID: 1512178910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (9)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20928,7 +21013,7 @@ GameObject:
   - component: {fileID: 1524499268}
   - component: {fileID: 1524499267}
   - component: {fileID: 1524499266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (11)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21021,9 +21106,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 171024708772791962, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 378902176643816731, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 750642798364308154, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237442307393608818, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111510111135220364, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403024553794750845, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471714309516538573, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863179363784374391, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200349321776992397, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643542085976373775, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007567527446842012, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312915458288857255, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5461052779654786451, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461052779654786451, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617838911758727576, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883467837545983650, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5903297864969995812, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
       propertyPath: m_RootOrder
@@ -21068,6 +21213,42 @@ PrefabInstance:
     - target: {fileID: 5903297864969995812, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681457000215774849, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802463389874363327, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234858588148130059, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257524406812634843, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317977343017056818, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8443312617025159580, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669547359922815630, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782196613509941504, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936233921586156472, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
@@ -21149,10 +21330,6 @@ MonoBehaviour:
   maxCoin: 99999
   maxHp: 100
   maxBomb: 4
-  bulletPos: {fileID: 0}
-  bullet: {fileID: 0}
-  bulletCasePos: {fileID: 0}
-  bulletCase: {fileID: 0}
 --- !u!4 &1532302473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903297864969995812, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
@@ -21238,7 +21415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9090603862899644898, guid: fafb79f12d05e384da8a57c0db38eaf5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9090603862899644898, guid: fafb79f12d05e384da8a57c0db38eaf5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21294,7 +21471,7 @@ GameObject:
   - component: {fileID: 1576718307}
   - component: {fileID: 1576718306}
   - component: {fileID: 1576718305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (34)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21392,7 +21569,7 @@ GameObject:
   - component: {fileID: 1584840652}
   - component: {fileID: 1584840651}
   - component: {fileID: 1584840650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (35)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21534,7 +21711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596966620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Weapon Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21571,7 +21748,7 @@ GameObject:
   - component: {fileID: 1642354425}
   - component: {fileID: 1642354424}
   - component: {fileID: 1642354423}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (21)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26481,7 +26658,7 @@ GameObject:
   - component: {fileID: 1703976704}
   - component: {fileID: 1703976703}
   - component: {fileID: 1703976702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (19)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26579,7 +26756,7 @@ GameObject:
   - component: {fileID: 1714474177}
   - component: {fileID: 1714474176}
   - component: {fileID: 1714474175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (25)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26739,7 +26916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1743337167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletCasePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26773,7 +26950,7 @@ GameObject:
   - component: {fileID: 1771558474}
   - component: {fileID: 1771558473}
   - component: {fileID: 1771558472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (24)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26871,7 +27048,7 @@ GameObject:
   - component: {fileID: 1791718986}
   - component: {fileID: 1791718985}
   - component: {fileID: 1791718984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (40)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26969,7 +27146,7 @@ GameObject:
   - component: {fileID: 1844702867}
   - component: {fileID: 1844702866}
   - component: {fileID: 1844702865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (18)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27067,7 +27244,7 @@ GameObject:
   - component: {fileID: 1847925097}
   - component: {fileID: 1847925096}
   - component: {fileID: 1847925095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27185,6 +27362,8 @@ MonoBehaviour:
   rate: 0.4
   area: {fileID: 0}
   trail: {fileID: 0}
+  curAmmo: 7
+  maxAmmo: 7
   bulletPos: {fileID: 1048403656}
   bullet: {fileID: 1097177315638302249, guid: 98500d5adc5108748b564cb739bf386b, type: 3}
   bulletCasePos: {fileID: 311401430}
@@ -27201,7 +27380,7 @@ GameObject:
   - component: {fileID: 1883013466}
   - component: {fileID: 1883013465}
   - component: {fileID: 1883013464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (27)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27346,7 +27525,7 @@ GameObject:
   - component: {fileID: 1994585778}
   - component: {fileID: 1994585777}
   - component: {fileID: 1994585776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (57)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27444,7 +27623,7 @@ GameObject:
   - component: {fileID: 2005432131}
   - component: {fileID: 2005432130}
   - component: {fileID: 2005432129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (49)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27542,7 +27721,7 @@ GameObject:
   - component: {fileID: 2007801260}
   - component: {fileID: 2007801259}
   - component: {fileID: 2007801258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (36)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27640,7 +27819,7 @@ GameObject:
   - component: {fileID: 2021096896}
   - component: {fileID: 2021096895}
   - component: {fileID: 2021096894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27739,7 +27918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5526796602622530604, guid: 7584852a22814b44e913849c5b14cbfa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27859,7 +28038,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8292283606732968115, guid: f803cc1b94de2ba438e9090c9eb7fb2b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8292283606732968115, guid: f803cc1b94de2ba438e9090c9eb7fb2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27916,7 +28095,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3708429494217974761, guid: d8ce9d985efd9aa4999f31de5b0f47dc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3708429494217974761, guid: d8ce9d985efd9aa4999f31de5b0f47dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27976,7 +28155,7 @@ GameObject:
   - component: {fileID: 2109070359}
   - component: {fileID: 2109070358}
   - component: {fileID: 2109070357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (23)
   m_TagString: Ground
   m_Icon: {fileID: 0}
