@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public GameObject[] bombs;
     public bool[] hasWeapons;
 
+    public GameObject bombObj;
+
     public int ammo;
     public int coin;
     public int hp;
@@ -29,8 +31,8 @@ public class Player : MonoBehaviour
     bool attackInput;
     float attackDelay;
     bool isAttackReady;
-
     bool isReload;
+    bool bombInput;
 
     Weapon equipWeapon;
 
@@ -50,6 +52,36 @@ public class Player : MonoBehaviour
         WeaponSwap();
         Attack();
         Reload();
+        ThrowBomb();
+    }
+
+    void ThrowBomb()
+    {
+        if (bomb <= 0)
+            return;
+
+        if (bombInput == true)
+        {
+            Debug.Log("¼ö·ùÅº");
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit rayHit;
+            if (Physics.Raycast(ray, out rayHit, 100))
+            {
+                Debug.DrawRay(transform.position, rayHit.point, Color.red);
+                Vector3 nextVector = rayHit.point - transform.position;
+                nextVector.y = 0;
+
+                GameObject instantBomb = Instantiate(bombObj, transform.position, Quaternion.identity);
+                Rigidbody rbBomb = instantBomb.GetComponent<Rigidbody>();
+
+                rbBomb.AddForce(nextVector, ForceMode.Impulse);
+                rbBomb.AddTorque(Vector3.back * 10, ForceMode.Impulse);
+
+                bomb--;
+                bombs[bomb].SetActive(false);
+            }
+        }
     }
 
     void WeaponSwap()
@@ -131,17 +163,27 @@ public class Player : MonoBehaviour
         attackInput = Input.GetMouseButton(0);
 
         reloadInput = Input.GetKeyDown(KeyCode.R);
+
+        bombInput = Input.GetKeyDown(KeyCode.G);
     }
 
     void GetItem()
     {
         if(nearObject != null)
         {
-            if( nearObject.tag == "Weapon")
+            if(nearObject.tag == "Weapon" && Input.GetKeyDown(KeyCode.F))
             {
                 Item item = nearObject.GetComponent<Item>();
                 int index = item.value;
                 hasWeapons[index] = true;
+
+                Destroy(nearObject);
+            }
+            if (nearObject.tag == "Bomb")
+            {
+                Item item = nearObject.GetComponent<Item>();
+                int index = item.value;
+                bomb++;
 
                 Destroy(nearObject);
             }

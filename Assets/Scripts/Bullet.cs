@@ -6,15 +6,19 @@ public class Bullet : MonoBehaviour
 {
     public int damage;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Floor")
-        {
-            Destroy(gameObject, 3);
-        }
-        else if (collision.gameObject.tag == "Wall")
+        if(other.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
+        }
+        if (other.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
+        if (other.gameObject.tag == "Floor")
+        {
+            Destroy(gameObject, 3);
         }
     }
 }

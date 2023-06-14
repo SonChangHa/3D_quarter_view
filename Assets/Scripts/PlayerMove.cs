@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour
 
     bool isJump;
     bool isRun;
+    bool isBorder;
 
     float interval = 0.25f;
     float doubleClickedTime = -1.0f;
@@ -60,9 +61,16 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    void StopToWall()
+    {
+        Debug.DrawRay(transform.position, moveVector * 5, Color.red);
+        isBorder = Physics.Raycast(transform.position, moveVector, 5, LayerMask.GetMask("Wall"));
+    }
+
     private void FixedUpdate()
     {
         rb.angularVelocity = Vector3.zero;
+        StopToWall();
     }
 
 
@@ -101,17 +109,19 @@ public class PlayerMove : MonoBehaviour
         moveVector = new Vector3(hAxis, 0, vAxis).normalized; // 벡터 정규화 꼭 해주어야함. 안그러면 대각선 이동 이상해짐
         //벨로시티는 속도를 더해주는 방식이여서인지 제대로 이동이 안됨.
         //rb.velocity = moveVector;
+
         if (isDoubleClicked)
         {
             anim.SetTrigger("doDodge");
-            transform.position += moveVector * 2 * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
+            if(!isBorder)
+                transform.position += moveVector * 2 * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
             StartCoroutine(doubleStop());
         } else
         {
             anim.SetBool("isWalk", moveVector != Vector3.zero);
             anim.SetBool("isRun", isRun);
-
-            transform.position += moveVector * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
+            if (!isBorder)
+                transform.position += moveVector * (isRun ? 1.0f : 0.5f) * Time.deltaTime * speed;
         }
 
         transform.LookAt(transform.position + moveVector); //방향 회전
